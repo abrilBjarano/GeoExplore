@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class ByCapitalPageComponent {
 
+  public capital: string = '';
+
+  searchByCapital( event: string ): void {
+    console.log( event );
+
+  }
+
 }

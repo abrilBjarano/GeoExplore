@@ -6,6 +6,7 @@ import { ByRegionPageComponent } from './pages/by-region-page/by-region-page.com
 import { CountryPageComponent } from './pages/country-page/country-page.component';
 import { CountryRoutingModule } from './country-routing.module';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -19,7 +20,8 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     CountryRoutingModule,
-    SharedModule
+    SharedModule,
+    // FormsModule
   ]
 })
 export class CountryModule { }
