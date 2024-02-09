@@ -7,6 +7,7 @@ import { CountryPageComponent } from './pages/country-page/country-page.componen
 import { CountryRoutingModule } from './country-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { FormsModule } from '@angular/forms';
+import { CountryTableComponent } from './components/country-table/country-table.component';
 
 
 
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     ByCapitalPageComponent,
     ByCountryPageComponent,
     ByRegionPageComponent,
-    CountryPageComponent
+    CountryPageComponent,
+    CountryTableComponent
   ],
   imports: [
     CommonModule,

@@ -5,7 +5,7 @@
   <div class="col">
 
     <shared-search-box
-      placeholder="Search by capital"
+      placeholder="Search..."
       (searchByCapital)="searchByCapital($event)">
     </shared-search-box>
 
@@ -14,7 +14,13 @@
 
 <div class="row">
   <div class="col">
+
     <hr>
-    <!-- tabla de resultados -->
+
+    <country-country-table
+      [countries]="countries">
+
+    </country-country-table>
+
   </div>
 </div>

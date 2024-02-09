@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'shared-search-box',
@@ -11,10 +11,19 @@ export class SearchBoxComponent {
   public placeholder: string = '';
 
 
+  @ViewChild('txtInput') txtInput!: ElementRef;
+
   @Output()
   public searchByCapital = new EventEmitter<string>();
 
   emitValue( value: string ): void {
+
+    // value.toLowerCase
+
+    if(value === '') return;
+
     this.searchByCapital.emit( value );
+
+    this.txtInput.nativeElement.value = '';
   }
 }
